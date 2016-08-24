@@ -1,0 +1,10 @@
+header 
+{ 
+    height: 40vh;
+    margin-bottom: 0;
+    background: url(../images/misc/anime-music.jpg) no-repeat 100% 25%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

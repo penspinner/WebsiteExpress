@@ -9,12 +9,14 @@ app.set('appData', data);
 app.set('view engine', 'ejs');
 app.set('views', 'app/views');
 
-app.locals.siteTitle = 'Site Title';
+app.locals.siteTitle = 'Anime';
 
 // Gives the path for the assets inside the routes
 app.use(express.static('app/public'));
-app.use(require('./routes/index'));
 
+// Use the routes with ExpressJS
+app.use(require('./routes/index'));
+app.use(require('./routes/animes'));
 
 var server = app.listen(app.get('port'), function()
 {
