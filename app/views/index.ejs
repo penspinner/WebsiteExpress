@@ -1,16 +1,12 @@
 <html>
     <head>
-        <title><%=siteTitle%>--<%=pageID%></title>
-        
-        <link href="css/style.css" rel="stylesheet">
-        
-        <script src="/reload/reload.js"></script>
+        <% include partials/template/head.ejs %>
     </head>
     <body>
-        <header>
-            
-        </header>
-        <h2>HELLO WORLD</h2>
-        <p>Look at some animes <a href="/animes">here</a>.</p>
+        <% include partials/template/header.ejs %>
+        <div class="container">
+            <h2>Welcome to Steven's Anime List</h2>
+            <p>Look at some animes <a href="/animes">here</a>.</p>
+        </div>
     </body>
 </html>

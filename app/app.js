@@ -17,6 +17,7 @@ app.use(express.static('app/public'));
 // Use the routes with ExpressJS
 app.use(require('./routes/index'));
 app.use(require('./routes/animes'));
+app.use(require('./routes/api'));
 
 var server = app.listen(app.get('port'), function()
 {

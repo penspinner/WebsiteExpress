@@ -1,4 +1,4 @@
-header 
+.header-img
 { 
     height: 40vh;
     margin-bottom: 0;
@@ -8,3 +8,5 @@ header
     -o-background-size: cover;
     background-size: cover;
 }
+
+.anime { border-bottom: 1px solid black; }

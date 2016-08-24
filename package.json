@@ -4,7 +4,7 @@
   "description": "Website created with NodeJS and ExpressJS.",
   "main": "app/app.js",
   "scripts": {
-    "start": "nodemon -e css,js,ejs,json --watch app"
+    "start": "nodemon -e css,js,ejs,json --watch app --ignore animes.json"
   },
   "author": "Steven Liao",
   "license": "ISC",
