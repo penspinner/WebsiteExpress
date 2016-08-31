@@ -17,3 +17,5 @@ div.anime:last-of-type { border-bottom: none; }
     background-color: #222;
     color: #9d9d9d;
 }
+
+.message-box { max-height: 200px; overflow: auto; }
