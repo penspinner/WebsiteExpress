@@ -6,64 +6,66 @@
     
     <body>
         <% include partials/template/header.ejs %>
-        <div class="container">
-            <h2 class="title"><%=pageTitle%></h2>
-            <div class="col-xs-4">
-                <h3>Suggest an Anime</h3>
-                <form id="anime-form">
-                    <div class="form-group">
-                        <label for="animeTitle">Anime Title</label>
-                        <input id="animeTitle" type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="animeAuthor">Author</label>
-                        <input id="animeAuthor" type="text" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="animeDateAired">Date Aired</label>
-                        <input id="animeDateAired" type="date" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="animeSummary">Summary</label>
-                        <textarea id="animeSummary" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-                <article class="chat">
-                    <header class="chat-header">
-                        <div class="h3 chat-title">Anime Chat
-                        </div>
-                    </header>
-                    <form name="chatForm" class="form-horizontal chat-form">
+        <div class="background">
+            <div class="container">
+                <h2 class="title"><%=pageTitle%></h2>
+                <div class="col-xs-4">
+                    <h3>Suggest an Anime</h3>
+                    <form id="anime-form">
                         <div class="form-group">
-                            <label for="chat-username" class="col-sm-2 control-label">Name</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="chat-username" required placeholder="Enter your name">
+                            <label for="animeTitle">Anime Title</label>
+                            <input id="animeTitle" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="animeAuthor">Author</label>
+                            <input id="animeAuthor" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="animeDateAired">Date Aired</label>
+                            <input id="animeDateAired" type="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="animeSummary">Summary</label>
+                            <textarea id="animeSummary" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <article class="chat">
+                        <header class="chat-header">
+                            <div class="h3 chat-title">Anime Chat
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="chat-message" class="col-sm-2 control-label">Message</label>
-                            <div class="col-sm-10">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Enter a message, then press enter" class="form-control" id="chat-message" rows="2" autocomplete="off"
-                                     required>
-                                    <span class="input-group-btn">
-                                        <button id="chat-submit" class="btn btn-info" type="submit">Chat</button>
-                                    </span>
+                        </header>
+                        <form name="chatForm" class="form-horizontal chat-form">
+                            <div class="form-group">
+                                <label for="chat-username" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="chat-username" required placeholder="Enter your name">
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label for="chat-message" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Enter a message, then press enter" class="form-control" id="chat-message" rows="2" autocomplete="off"
+                                         required>
+                                        <span class="input-group-btn">
+                                            <button id="chat-submit" class="btn btn-info" type="submit">Chat</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="panel panel-default message-box">
+                            <div class="panel-body chat-display">
+                                <p class="text-muted chat-text"></p>
+                            </div>
                         </div>
-                    </form>
-                    <div class="panel panel-default message-box">
-                        <div class="panel-body chat-display">
-                            <p class="text-muted chat-text"></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </div>
 
-            <div class="col-xs-8">
-                <div class="animes"></div>
+                <div class="col-xs-8">
+                    <div class="animes"></div>
+                </div>
             </div>
         </div>
         <% include partials/template/footer.ejs %>

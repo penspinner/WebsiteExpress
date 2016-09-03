@@ -12,7 +12,7 @@ router.get('/animes', function(req, res)
     // Renders the index from app/views set in app.js
     res.render('animes',
     {
-        pageTitle: 'Animes',
+        pageTitle: 'Suggest Animes',
         pageID: 'animes',
         animes: animeData
     });
