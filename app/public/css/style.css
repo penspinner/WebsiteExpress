@@ -1,0 +1,24 @@
+.header-img
+{ 
+    height: 40vh;
+    margin-bottom: 0;
+    background: url(../images/misc/anime-music.jpg) no-repeat 100% 25%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div.anime { border-bottom: 1px solid black; }
+div.anime:last-of-type { border-bottom: none; }
+
+.footer 
+{ 
+    background-color: #222;
+    color: #9d9d9d;
+}
+
+.chat { background-color: white; box-shadow: 0px 0px 4px #888888; border-radius: 4px; padding: 5px; }
+.message-box { max-height: 200px; overflow: auto; }
+
+.background { background: linear-gradient(to bottom, rgb(227, 181, 81), rgb(254, 194, 66), rgb(227, 181, 81)); }
