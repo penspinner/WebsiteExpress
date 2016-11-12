@@ -9,7 +9,6 @@ $(function()
       var chatForm = document.forms.chatForm;
 
       if (chatForm)
-      {
 
           chatForm.addEventListener('submit', function(e)
           {
@@ -27,6 +26,35 @@ $(function()
   });
 });
 
+=======
+var socket = io();
+var chatUsername = document.querySelector('#chat-username');
+var chatMessage = document.querySelector('#chat-message');
+
+socket.on('connect', function()
+{
+    var chatForm = document.forms.chatForm;
+    
+    if (chatForm)
+    {
+
+        chatForm.addEventListener('submit', function(e)
+        {
+            e.preventDefault();
+            socket.emit('postMessage', { username: chatUsername.value, message: chatMessage.value });
+            chatMessage.value = '';
+            chatMessage.focus();
+        });
+        
+        socket.on('updateMessages', function(data)
+        {
+            showMessage(data);
+        });
+    }
+});
+
+
+>>>>>>> ff4e5ac19c8e5505868c72e3555a08bf5b7b542d
 function showMessage(data)
 {
     var chatDisplay = document.querySelector('.chat-display');
